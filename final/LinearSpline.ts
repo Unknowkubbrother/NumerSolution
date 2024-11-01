@@ -18,7 +18,7 @@ for(let i=1;i<point.length;i++){
     m[i-1] = (point[i].y - point[i-1].y) / (point[i].x - point[i-1].x);
 }
 
-let result;
+let result = 0;
 for(let i=1;i<point.length;i++){
     if (x >= point[i-1].x && point[i].x){
         result = point[i-1].y + m[i-1] * (x-point[i-1].x);
